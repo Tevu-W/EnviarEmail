@@ -72,6 +72,12 @@ public class EnviarEmailController implements Initializable {
 	@FXML
 	void clean(ActionEvent event) {
 		mensajeArea.clear();
+		serverField.clear();
+		puertoField.clear();
+		remitenteField.clear();
+		destinatarioField.clear();
+		asuntoField.clear();
+		passField.clear();
 	}
 
 	@FXML
