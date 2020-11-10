@@ -116,12 +116,6 @@ public class EnviarEmailController implements Initializable {
 	@FXML
 	void send(ActionEvent event) throws EmailException {
 
-		// System.out.println(model.getServidor());
-		// Servidor = smtp.gmail.com:465
-		// SSL = sí
-		// Email/Usuario = dad.iesdpm@gmail.com
-		// pass = Minikit0$
-
 		int puerto;
 		puerto = Integer.valueOf(model.getPuerto());
 
