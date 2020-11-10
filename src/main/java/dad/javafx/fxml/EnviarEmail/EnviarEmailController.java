@@ -16,78 +16,72 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 
-public class EnviarEmailController implements Initializable{
+public class EnviarEmailController implements Initializable {
 
-	
 	@FXML
-    private GridPane view;
+	private GridPane view;
 
-    @FXML
-    private TextField serverField;
+	@FXML
+	private TextField serverField;
 
-    @FXML
-    private Button enviarButton;
-    
-    @FXML
-    private TextArea mensajeArea;
+	@FXML
+	private Button enviarButton;
 
-    @FXML
-    private TextField puertoField;
+	@FXML
+	private TextArea mensajeArea;
 
-    @FXML
-    private CheckBox SSLbox;
+	@FXML
+	private TextField puertoField;
 
-    @FXML
-    private TextField remitenteField;
+	@FXML
+	private CheckBox SSLbox;
 
-    @FXML
-    private TextField destinatarioField;
+	@FXML
+	private TextField remitenteField;
 
-    @FXML
-    private TextField asuntoField;
+	@FXML
+	private TextField destinatarioField;
 
-    @FXML
-    private Button vaciarButton;
+	@FXML
+	private TextField asuntoField;
 
-    @FXML
-    private Button cerrarButton;
+	@FXML
+	private Button vaciarButton;
 
-    @FXML
-    private PasswordField passField;
-    
-    
-    @Override
+	@FXML
+	private Button cerrarButton;
+
+	@FXML
+	private PasswordField passField;
+
+	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		// TODO Auto-generated method stub
 		
 	}
-    
-    public EnviarEmailController() throws IOException {
-    	FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/View.fxml"));
-    	loader.setController(this);
-    	loader.load();
-    }
-    
-    public GridPane getView() {
-    	return view;
-    }
 
-    @FXML
-    void clean(ActionEvent event) {
-    	mensajeArea.clear();
-    }
+	public EnviarEmailController() throws IOException {
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("/fxml/View.fxml"));
+		loader.setController(this);
+		loader.load();
+	}
 
-    @FXML
-    void close(ActionEvent event) {
-    	Platform.exit();
-    }
+	public GridPane getView() {
+		return view;
+	}
 
-    @FXML
-    void send(ActionEvent event) {
+	@FXML
+	void clean(ActionEvent event) {
+		mensajeArea.clear();
+	}
 
-    }
+	@FXML
+	void close(ActionEvent event) {
+		Platform.exit();
+	}
 
-	
-	
-	
+	@FXML
+	void send(ActionEvent event) {
+
+	}
+
 }
