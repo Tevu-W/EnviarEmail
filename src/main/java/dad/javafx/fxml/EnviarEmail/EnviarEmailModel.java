@@ -9,7 +9,7 @@ import javafx.beans.property.StringProperty;
 
 public class EnviarEmailModel {
 
-	IntegerProperty puerto = new SimpleIntegerProperty();
+	StringProperty puerto = new SimpleStringProperty();
 	BooleanProperty SSL = new SimpleBooleanProperty();
 	StringProperty servidor = new SimpleStringProperty();
 	StringProperty remitente = new SimpleStringProperty();
@@ -17,18 +17,6 @@ public class EnviarEmailModel {
 	StringProperty destinatario = new SimpleStringProperty();
 	StringProperty asunto = new SimpleStringProperty();
 	StringProperty mensaje = new SimpleStringProperty();
-
-	public final IntegerProperty puertoProperty() {
-		return this.puerto;
-	}
-
-	public final int getPuerto() {
-		return this.puertoProperty().get();
-	}
-
-	public final void setPuerto(final int puerto) {
-		this.puertoProperty().set(puerto);
-	}
 
 	public final BooleanProperty SSLProperty() {
 		return this.SSL;
@@ -112,6 +100,18 @@ public class EnviarEmailModel {
 
 	public final void setMensaje(final String mensaje) {
 		this.mensajeProperty().set(mensaje);
+	}
+
+	public final StringProperty puertoProperty() {
+		return this.puerto;
+	}
+
+	public final String getPuerto() {
+		return this.puertoProperty().get();
+	}
+
+	public final void setPuerto(final String puerto) {
+		this.puertoProperty().set(puerto);
 	}
 
 }
